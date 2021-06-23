@@ -83,7 +83,7 @@ const fi = (function() {
       const compactedArray = [];
       
       for (let i = 0; i < collection.length; i++) {
-        if (!collection[i] == null)
+        if (!collection[i] == falsy)
           compactedArray.push(collection[i]);
         }
       return compactedArray
