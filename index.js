@@ -78,6 +78,7 @@ const fi = (function() {
     },
     
     compact: function(collection, n) {
+      if (!(collection instanceof Array))
       return (n) ? collection.slice(collection.length-n, collection.length) : collection[collection.length-1]
     },
     
