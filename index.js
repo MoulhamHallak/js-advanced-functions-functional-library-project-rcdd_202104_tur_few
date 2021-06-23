@@ -73,7 +73,7 @@ const fi = (function() {
       return (n) ? collection.slice(0, n) : collection[0]
     },    
     
-    last: function(collection, n) {
+    last: function(collection) {
       return (n) ? collection.slice(collection.length-n, collection.length) : collection[collection.length-1]
     },
     
