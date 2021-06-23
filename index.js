@@ -79,7 +79,14 @@ const fi = (function() {
     
     compact: function(collection) {
       if (!(collection instanceof Array))
-      return (n) ? collection.slice(collection.length-n, collection.length) : collection[collection.length-1]
+      
+      const compactedArray = [];
+      
+      for (let i = 0; i < collection.length; i++) {
+        if (!collection[i] == null)
+          compactedArray.push(collection[i]);
+        }
+      return compactedArray
     },
     
     functions: function() {
