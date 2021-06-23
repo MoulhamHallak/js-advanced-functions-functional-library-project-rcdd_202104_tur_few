@@ -77,7 +77,7 @@ const fi = (function() {
       return (n) ? collection.slice(collection.length-n, collection.length) : collection[collection.length-1]
     },
     
-    last: function(collection, n) {
+    compact: function(collection, n) {
       return (n) ? collection.slice(collection.length-n, collection.length) : collection[collection.length-1]
     },
     
